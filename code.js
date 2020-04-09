@@ -22,7 +22,7 @@ class Code {
 
     getJumpCode(jmp){
         if(jmp in jumpTable){
-            return jumpTable(jmp)
+            return jumpTable[jmp]
         }
         return nullCode;
     }
