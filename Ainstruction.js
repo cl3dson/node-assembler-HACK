@@ -5,6 +5,9 @@ class AInstruction{
         this.type = 'A'
     }
 
+    isPseudoInstruction(){
+        return false;
+    }
 }
 
 module.exports = AInstruction

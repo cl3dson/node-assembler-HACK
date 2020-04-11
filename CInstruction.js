@@ -10,6 +10,10 @@ class CInstruction{
 
         this.type = 'C';
     }
+
+    isPseudoInstruction(){
+        return false;
+    }
 }
 
 module.exports = CInstruction
