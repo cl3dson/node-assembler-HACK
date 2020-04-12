@@ -39,6 +39,7 @@ class Parser {
             this.currentCommand = false;
             return;
         }
+        //option to skip label declarations at secound round
         while(lineContent.indexOf('//') == 0 || !lineContent || (lineContent.trim().match(LABEL_REGEX) && skipLabels)){
             lineContent = (await this.rl[Symbol.asyncIterator]().next()).value
         }
